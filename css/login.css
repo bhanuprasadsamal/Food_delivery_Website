@@ -1,0 +1,112 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    align-items: center;  
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../images/bg4.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;   
+}
+
+.form-container form{
+    backdrop-filter: blur(5.5px);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0,5px,10px,#08d0f3;
+    background: url(../images/images1.jpeg);
+    text-align: center;
+    width: 500px;
+}
+
+.form-container form h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(11, 12, 12);
+}
+
+.form-container form input,
+.form-container form select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.form-container form select option{
+    background: rgb(140, 227, 242);
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-container form .form-btn{
+    background: rgb(20, 177, 220);
+}
+
+.form-container form .form-btn:hover{
+    background: crimson;
+    color: #fff;
+}
+
+.form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color:  rgb(20, 177, 220);
+}
+
+.form-container form p a{
+    color: crimson;
+}
+
+.form-container form .error-msg{
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.success{
+    color: #2ed573;
+}
+.error{
+    color: #ff4757;
+}
